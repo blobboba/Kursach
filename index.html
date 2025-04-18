@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP.CO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0e0e0e;
+            color: white;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        header {
+            position: relative;
+            background: url('game.jpg') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .top-banner {
+            background: #000;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+            .menu a, .menu button {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+        .hero {
+            padding: 0 60px 100px;
+        }
+
+            .hero h1 {
+                font-size: 36px;
+                max-width: 600px;
+                margin-bottom: 20px;
+            }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn {
+            background: white;
+            color: black;
+            padding: 10px 24px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .btn:hover {
+                background: #ff3c3c;
+                color: white;
+            }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            background: #111;
+            padding: 30px 60px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        section {
+            padding: 60px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+            .product-card img {
+                max-width: 100%;
+                border-radius: 12px;
+                margin-bottom: 15px;
+            }
+
+            .product-card h3 {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+
+            .product-card p {
+                margin-bottom: 10px;
+            }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .review-card {
+            background: #1a1a1a;
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .footer {
+            background: #000;
+            padding: 40px 60px;
+            text-align: center;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+            .newsletter-form input {
+                padding: 10px;
+                border-radius: 8px;
+                border: none;
+                width: 300px;
+            }
+
+            .newsletter-form button {
+                padding: 10px 20px;
+                border-radius: 8px;
+                border: none;
+                background: white;
+                color: black;
+                font-weight: bold;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+                .newsletter-form button:hover {
+                    background: #ff3c3c;
+                    color: white;
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-banner">
+            Зарегистрируйся и получи скидку 20%. <a href="#">Регистрация</a>
+        </div>
+        <nav>
+            <div class="logo">SHOP.CO</div>
+            <div class="menu">
+                <a href="#">Каталог ▾</a>
+                <button>ВОЙТИ</button>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>THE LAST OF US PART II REMASTERED</h1>
+            <div class="hero-actions">
+                <button class="btn">В корзину</button>
+                <span class="price">$120</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div>Скидки круглый год</div>
+        <div>Оперативная поддержка</div>
+        <div>Активное коммьюнити</div>
+        <div>Любовь к играм</div>
+    </section>
+
+    <section>
+        <h2>Рекомендуем:</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="game.jpg" alt="">
+                <h3>THE LAST OF US PART II REMASTERED</h3>
+                <p>$120</p>
+            </div>
+            <!-- Добавить ещё 5 карточек по аналогии -->
+        </div>
+    </section>
+
+    <section>
+        <h2>КАТАЛОГ</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="game.jpg" alt="">
+                <h3>THE LAST OF US PART II REMASTERED</h3>
+                <p>$120</p>
+                <button class="btn">В корзину</button>
+            </div>
+            <!-- Добавить ещё 7 карточек по аналогии -->
+        </div>
+    </section>
+
+    <section>
+        <h2>ОТЗЫВЫ:</h2>
+        <div class="reviews">
+            <div class="review-card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <strong>Sarah M.</strong>
+                <p>"I'm blown away by the quality..."</p>
+            </div>
+            <div class="review-card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <strong>Alex K.</strong>
+                <p>"Finding clothes that align with my style..."</p>
+            </div>
+            <div class="review-card">
+                <p>⭐⭐⭐⭐⭐</p>
+                <strong>James L.</strong>
+                <p>"As someone who’s always on the lookout..."</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3>ПОДПИШИТЕСЬ НА НАШУ РАССЫЛКУ</h3>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe to Newsletter</button>
+        </form>
+        <p>© 2014–2025 Shop.Co</p>
+    </footer>
+</body>
+</html>
